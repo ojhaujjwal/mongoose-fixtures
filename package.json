@@ -1,0 +1,38 @@
+{
+  "name": "mongoose-fixtures",
+  "description": "Mongoose Data Fixtures",
+  "license": "MIT",
+  "repository": "ojhaujjwal/mongoose-fixtures",
+  "author": {
+    "name": "Ujjwal Ojha",
+    "email": "bring2uo@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mongodb",
+    "document",
+    "model",
+    "schema",
+    "database",
+    "odm",
+    "data",
+    "datastore",
+    "query",
+    "nosql",
+    "orm",
+    "db",
+    "fixture"
+  ],
+  "devDependencies": {
+    "ava": "0.0.4",
+    "mongoose": "^4.2.4"
+  },
+  "dependencies": {
+    "promise": "^7.0.4"
+  }
+}
