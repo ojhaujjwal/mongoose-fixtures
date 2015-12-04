@@ -1,6 +1,6 @@
 mongoose-fixtures
 ===================
-Mongoose Data Fixtures
+[![Build Status](https://api.travis-ci.org/ojhaujjwal/mongoose-fixtures.svg)](https://travis-ci.org/ojhaujjwal/mongoose-fixtures)
 
 This library aims to provide a simple way to manage and execute the loading of data fixtures for the [mongoose](https://github.com/Automattic/mongoose). Here is a simple example of a fixture:
 
