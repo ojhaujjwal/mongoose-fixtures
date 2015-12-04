@@ -1,4 +1,5 @@
 'use strict';
+var Promise = require('promise');
 
 /**
  * Executes promises serially
