@@ -1,5 +1,6 @@
 {
   "name": "mongoose-fixtures",
+  "version": "0.0.1",
   "description": "Mongoose Data Fixtures",
   "license": "MIT",
   "repository": "ojhaujjwal/mongoose-fixtures",
