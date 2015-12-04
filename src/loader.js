@@ -1,6 +1,7 @@
 'use strict';
 
 var Promise = require('promise'),
+	path = require('path'),
 	fs = require('fs');
 
 function Loader()
@@ -23,7 +24,7 @@ Loader.prototype.loadFromDir = function(dir) {
 		fs.readdir(dir, function(err, files) {
 			if (err) return reject(err);
 			files.forEach(function(file) {
-				_this.loadFile(file);
+				_this.loadFile(path.resolve(dir, file));
 			});
 			resolve();
 		});
