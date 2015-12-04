@@ -18,7 +18,7 @@ Loader.prototype.loadFile = function(path) {
 	this.load(require(path));
 };
 
-Loader.prototype.loadFromDir = function(dir) {
+Loader.prototype.loadFromDirectory = function(dir) {
 	var _this = this;
 	return new Promise(function(resolve, reject) {
 		fs.readdir(dir, function(err, files) {

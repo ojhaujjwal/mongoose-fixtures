@@ -7,7 +7,7 @@ var should = require('should'),
 describe('Loader tests', function() {
 	it ('should load all the fixtures from a directory', function() {
 		var loader = new Loader();
-		return loader.loadFromDir(path.resolve(__dirname, './assets'))
+		return loader.loadFromDirectory(path.resolve(__dirname, './assets'))
 			.then(function() {
 				loader.all().should.be.lengthOf(2);
 			});

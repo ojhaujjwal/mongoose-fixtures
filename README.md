@@ -17,9 +17,7 @@ A fixture is any callback which returns a promise. The promise should be resolve
 
 Then you need to add fixtures to a loader instance:
 ```js
-	var Loader = require('mongoose-fixtures').Loader;
-	loader = new Loader();
-	
+	var loader = require('mongoose-fixtures').loader();
 	loader.load(require('fixtures/user-fixture'));
 ```
 
@@ -27,15 +25,14 @@ You can load a set of fixtures from a directory as well:
 ```js
 	var path = require('path');
 
-	loader.loadFromDir(path.resolve(__dirname, './fixtures'));
+	loader.loadFromDirectory(path.resolve(__dirname, './fixtures'));
 ```
 
 Then you can execute the fixtures:
 ```js
-var Executor = require('mongoose-fixtures').Executor,
-	mongoose = require('mongoose');
-	
-var executor = new Executor(mongoose);
+var mongoose = require('mongoose'),
+  executor = require('mongoose-fixtures').executor(mongoose);
+  
 executor.execute(loader);
 ```
 

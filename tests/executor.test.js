@@ -10,7 +10,7 @@ describe('Executor tests', function() {
 	it ('should execute all the fixture', function() {
 		var loader = new Loader();
 		var executor = new Executor(mongoose);
-		return loader.loadFromDir(path.resolve(__dirname, './assets'))
+		return loader.loadFromDirectory(path.resolve(__dirname, './assets'))
 			.then(function() {
 				return executor.execute(loader);
 			}).then(function() {

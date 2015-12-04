@@ -1,5 +1,11 @@
 'use strict';
+var Loader = require('./src/loader'),
+	Executor = require('./src/executor');
 
-exports.Executor = require('./src/executor');
+exports.executor = function(loader) {
+	return new Executor(loader);
+};
 
-exports.Loader = require('./src/loader');
+exports.loader = function() {
+	return new Loader();
+};
