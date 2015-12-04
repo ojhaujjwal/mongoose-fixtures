@@ -15,12 +15,13 @@ function executeSequentially(promiseFactories) {
 
 function Executor(conn) {
 	this.conn = conn;
+	this.references = {};
 }
 
 Executor.prototype._executeFixture = function(fixture) {
 	var _this = this;
 	return function() {
-		return fixture.load(_this.conn);
+		return fixture(_this.conn, _this.references);
 	}
 };
 
